@@ -1,0 +1,156 @@
+@media (max-width:1110px){
+   
+       #download #mobile-image>img{
+        display: none !important;
+       }
+       .buttons{
+        padding-left:35rem;
+        gap: 1px;
+    }
+}
+@media screen and (max-width:992px) {
+    .banner-card{
+        width: 60%;
+    }
+    .banner-bottom {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    #download #mobile-image>img{
+        display: none !important;
+       }
+       .buttons{
+        padding-left:50%;
+        gap: 1px;
+    }
+    #testimonial .container{
+        padding-left: 20rem !important;
+    }
+}
+@media screen and (max-width:778px) {
+    .heading h1{
+        font-size: 2.5rem;
+    }
+    .banner-card{
+        width: 70%;
+    }
+    .card{
+        width: 40%;
+       }
+    .carpic{
+        flex-wrap: wrap;
+    }
+    .carousel-item{
+        height: 60rem;
+    } 
+    #mobile-image{
+        height: auto;
+    }
+   .earn .col-5{
+    display: none !important;
+   }
+   #download {
+    height: 75rem!important;
+   }
+   #download>.download-wrapper{
+    height: 75rem;
+    opacity: 0.8;
+    background-color: #0a0a0a;
+}
+#mobile-image>div{
+    width: 70% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem !important;
+}
+   #download #mobile-image>img{
+    display: none !important;
+   }
+
+   .buttons{
+    padding-left:50%;
+    gap: 1px;
+   }
+   #last{
+    display: none!important;
+}
+}
+@media screen and (max-width:550px) {
+    .heading h1{
+        font-size: 2rem;
+    }
+    .banner-card{
+        width: 95%;
+        left: 10px;
+    }
+    .card{
+        width: 90%;
+    }
+    .carpic{
+        flex-wrap: wrap;
+    }
+    .carousel-item{
+        height: 60rem;
+    } 
+    .download-right-side>div{
+        flex-direction: row;
+    }
+
+    #test{
+        margin-right: 40%!important;
+    }
+    #test .card{
+        width: 18rem;
+        height: 22rem;
+    }
+    .earn .col-5{
+        display: none !important;
+       }
+       #download {
+        height: auto!important;
+       }
+     #download #mobile-image>img{
+        display: none !important;
+       }
+
+    .buttons{
+        padding-left:50%;
+        gap: 1px;
+    }
+    #last{
+        display: none!important;
+    }
+}
+@media screen and (max-width:380px) {
+    .heading h1{
+        font-size: 1.8rem;
+    }
+    .carousel-item{
+        height: 70rem;
+    } 
+    .earn .col-5{
+        display: none !important;
+       }
+       #download {
+        height: auto!important;
+       }
+       #download #mobile-image>img{
+        display: none !important;
+       }
+    
+       .buttons{
+        padding-left:50%;
+        gap: 1px;
+       }
+       #last{
+        display: none!important;
+    }
+    #mid{
+        display: none!important;
+    }
+}
+
+
+
+

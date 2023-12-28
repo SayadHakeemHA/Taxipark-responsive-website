@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxiPark</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+  <!-- Header-start -->
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+    <div class="container px-lg-4 py-2">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo-inner (1).png" alt="logo">
+      </a>
+      <button class="navbar-toggler hidden" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+        aria-label="Toggle navigation">
+
+        <i class="fa-solid fa-bars text-white fs-1 " id="homeIcon"></i>
+      </button>
+
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" aria-expanded="false">
+              Home
+              &nbsp;<i class="fa-solid fa-angle-right angle"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+              <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+              <li><a class="dropdown-item" href="#">Homepage 3</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get taxi</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">services</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              our blogs&nbsp;
+              <i class="fa-solid fa-angle-right angle"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog One Column</a></li>
+              <li><a class="dropdown-item" href="#">Blog Two Column</a></li>
+              <li><a class="dropdown-item" href="#">Blog Three Column</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              gallery&nbsp;
+              <i class="fa-solid fa-angle-right angle"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Gallery 2-column </a></li>
+              <li><a class="dropdown-item" href="#">Gallery 3-column</a></li>
+              <li><a class="dropdown-item" href="#">Gallery 4-column</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              shop&nbsp;
+              <i class="fa-solid fa-angle-right angle"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog One Column</a></li>
+              <li><a class="dropdown-item" href="#">Blog Two Column</a></li>
+              <li><a class="dropdown-item" href="#">Blog Three Column</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              contacts&nbsp;
+              <i class="fa-solid fa-angle-right angle"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog One Column</a></li>
+              <li><a class="dropdown-item" href="#">Blog Two Column</a></li>
+              <li><a class="dropdown-item" href="#">Blog Three Column</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              pages&nbsp;
+              <i class="fa-solid fa-angle-right angle"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Typography </a></li>
+              <li><a class="dropdown-item" href="#">Page Two </a></li>
+              <li><a class="dropdown-item" href="#">Page Three </a></li>
+              <li><a class="dropdown-item" href="#">Page four </a></li>
+              <li><a class="dropdown-item" href="#">Page five </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping " id="shopicon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner-start  -->
+  <section id="banner">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="./assets/michael-lee-cPDt9ZOrDf4-unsplash (1).jpg" class="d-block kenburns-bottom-right"
+            alt="slide img1">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./assets/paul-hanaoka-D-qq7W751vs-unsplash.jpg" class="d-block kenburns-bottom-right"
+            alt="slide img-2" />
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./assets/homepage-3-2-bg.jpg" class="d-block kenburns-bottom-right" alt="slide img3">
+        </div>
+      </div>
+
+      <div class="banner-card bg-white absolute top-10 left-10 z-10 ">
+        <h1 class=""> GET TAXI </h1>
+        <form action="" class="container ">
+          <div class=" carpic my-4 d-flex">
+            <a href="#" class=" px-2 pt-4 activeCarImg ">
+              <img src="./assets/icon-car-1 (1).png" alt="">
+              <p>STANDARD</p>
+            </a>
+            <a href="#" class=" px-2 pt-4 ">
+              <img src="./assets/icon-car-2 (1).png" alt="">
+              <P>BUSINESS</P>
+            </a>
+            <a href="#" class=" px-2 pt-4 ">
+              <img src="./assets/icon-car-3 (1).png" alt="">
+              <P>VIP</P>
+            </a>
+            <a href="#" class="px-2 pt-4 ">
+              <img src="./assets/icon-car-4 (1).png" alt="">
+              <P>BUS-MINIVAN</P>
+            </a>
+          </div>
+          <div class="row my-4 ">
+            <div class="col-12 my-2 col-md">
+              <input type="text" class="form-control" placeholder="From Address...">
+            </div>
+            <div class="col-12 my-2 col-md">
+              <input type="text" class="form-control" placeholder="To...">
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-12 my-2 col-md">
+              <input type="text" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="col-12 my-2 col-md">
+              <input type="text" class="form-control" placeholder="Date and Time">
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-warning mx-auto rounded-full">GET TAXI</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- banner-bottom -->
+  <section class="w-full bg-warning ">
+    <div class=" banner-bottom row text-dark container-fluid d-flex justify-content-around py-2 ">
+      <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center py-3">
+        <i class="fa-solid fa-phone fs-5 bg-white p-3"></i>
+        <h2 class="fs-4 mt-2 mx-2">800-5-700</h2>
+      </div>
+      <div class="col-12 col-md-5 col-lg-3  d-flex justify-content-center  py-3">
+        <i class="fa-brands fa-skype fs-5 bg-white p-3"></i>
+        <h2 class="fs-4 mt-2 mx-2">GetTaxiPark</h2>
+      </div>
+      <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center py-3">
+        <i class="fa-solid fa-location-dot fs-5 bg-white p-3"></i>
+        <h2 class="fs-5 mt-1 mx-2">43 2-nd Avenue, MEXICO, 29004-7153</h2>
+      </div>
+      <div class="col-12 col-md-5 col-lg-3 py-2 ">
+        <button>OUR TARIFFS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- services section -->
+
+  <section class="mt-5 py-3" id="services">
+    <div class="heading mb-5">
+      <h3 class="fs-4 text-warning text-center fw-bold">WELCOME</h3>
+      <h1 class="text-center">OUR SERVICES</h1>
+    </div>
+    <!--cards -->
+    <div class=" container row d-flex justify-content-center mx-auto gap-1 ">
+
+      <div class="col-12 col-md-6 col-lg-3 p-2 "
+        style="width:17rem; height: 18rem; border-right: 1px dashed lightgray;">
+        <div class=" d-flex justify-content-center align-content-center py-3 mb-2">
+          <img src="./assets/services-3 (1).png" class="card-img-top w-25" alt="">
+        </div>
+        <div class="card-body px-2">
+          <h5 class="card-title py-2 text-center fw-bold">AIRPORT TRANSFER</h5>
+          <p class=" text-center fw-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
+            voluptatibus.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 col-lg-2 p-2 "
+        style="width:17rem; height: 18rem; border-right: 1px dashed lightgray;">
+        <div class=" d-flex justify-content-center align-content-center py-3 mb-3">
+          <img src="./assets/services-4 (1).png" class="card-img-top w-25" alt="...">
+        </div>
+        <div class="card-body px-2">
+          <h5 class="card-title py-2 text-center fw-bold">BAGGAGE TRANSPORT</h5>
+          <p class=" text-center fw-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, askmx </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 col-lg-2 p-2 "
+        style="width:17rem; height: 18rem; border-right: 1px dashed lightgray;">
+        <div class=" d-flex justify-content-center align-content-center py-3 mb-3">
+          <img src="./assets/services-1 (1).png" class="card-img-top w-25" alt="...">
+        </div>
+        <div class="card-body px-2">
+          <h5 class="card-title py-2 text-center fw-bold">RAPID CITY TRANSFER</h5>
+          <p class=" text-center fw-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 col-lg-2 p-2 " style="width:17rem; height: 18rem;">
+        <div class=" d-flex justify-content-center align-content-center py-3 mb-3">
+          <img src="./assets/services-2 (1).png" class="card-img-top w-25" alt="...">
+        </div>
+        <div class="card-body px-2">
+          <h5 class="card-title py-2 text-center fw-bold">BOOKING A HOTEL</h5>
+          <p class=" text-center fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aspernatur!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tariffs-section start-->
+  <section id="tariffs" class="mt-5 py-5 pb-5">
+    <div class="heading mb-4 ">
+      <h3 class="fs-4 text-warning text-center fw-bold">SEE OUR</h3>
+      <h1 class="text-center">TARIFFS</h1>
+    </div>
+    <div class="container row mx-auto d-flex gap-3 justify-content-center my-5">
+      <div class="card py-3 col-12 col-md-6 col-lg-2" style="width:18rem; height: 23rem;">
+        <img src="./assets/tariff-1 (1).png" class="card-img-top px-3" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-center fw-bold">STANDARD</h3>
+          <p class="card-text text-center px-2">Standard sedan for a drive around the city at your service</p>
+          <h1 class="text-center fw-bold">$3 <span class="fs-4">/km</span></h1>
+        </div>
+      </div>
+      <div class="card py-4 col-12 col-md-6 col-lg-2" style="width:18rem; height: 23rem;">
+        <img src="./assets/tariff-2 (1).png" class="card-img-top px-3" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-center fw-bold">BUSINESS</h3>
+          <p class="card-text text-center px-2">Standard sedan for a drive around the city at your service</p>
+          <h1 class="text-center fw-bold">$3.7 <span class="fs-4">/km</span></h1>
+        </div>
+      </div>
+      <div class="card py-4 relative col-12 col-md-6 col-lg-2" id="vip" style="width:18rem; height: 23rem;">
+        <img src="./assets/tariff-3 (1).png" class="card-img-top px-3" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-center fw-bold">VIP</h3>
+          <p class="card-text text-center px-2">Standard sedan for a drive around the city at your service</p>
+          <h1 class="text-center fw-bold">$7 <span class="fs-4">/km</span></h1>
+        </div>
+        <div id="vip-logo">
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+      <div class="card py-3 col-12 col-md-6 col-lg-2" style="width:18rem; height: 23rem;">
+        <img src="./assets/tariff-4 (1).png" class="card-img-top px-4" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-center fw-bold">BUS-MINIVAN</h3>
+          <p class="card-text text-center px-2">Standard sedan for a drive around the city at your service</p>
+          <h1 class="text-center fw-bold">$5.5 <span class="fs-4">/km</span></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download  section -->
+  <section id="download">
+    <div class="download-wrapper w-full">
+      <div class="heading mb-4 pt-5">
+        <h3 class="fs-4 text-warning text-center fw-bolder">GET MORE BENEFITS</h3>
+        <h1 class="text-center fw-bolder">DOWNLOAD THE APP</h1>
+      </div>
+      <div class="  d-flex row justify-content-between flex-column flex-md-row my-5 ">
+        <div class="download-left-side col-11 col-md-4 mx-auto ">
+          <div class="d-flex px-4 my-5 w-75 mx-auto download-detail">
+            <span class=" bg-warning text-dark fs-6 fw-bold mx-3">01</span>
+            <div>
+              <h2 class="fs-5 fw-bolder text-warning text-center text-md-start">FAST BOOKING</h2>
+              <p class="fw-light text-center text-md-start">Nam ac ligula congue, interdum enim sit amet, fermentum
+                nisi.</p>
+            </div>
+          </div>
+
+          <div class="d-flex px-4 my-5 w-75 mx-auto download-detail">
+            <span class=" bg-warning text-dark fs-6 fw-bold mx-3">02</span>
+            <div>
+              <h2 class="fs-5 fw-bolder text-warning text-center text-md-start">FAST BOOKING</h2>
+              <p class="fw-light text-center text-md-start">Nam ac ligula congue, interdum enim sit amet, fermentum
+                nisi.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-11 col-md-3 mx-auto" id="mobile-image">
+          <img src="./assets/mobile (1).png" alt="mobile image" class="d-lg-block">
+          <div class=" google bg-warning w-75  gap-2 flex-column justify-content-center align-content-center px-5 py-5">
+            <a href="#"><img src="./assets/app-google-150x50 (1).png" alt="app-google"></a>
+            <a href="#"><img src="./assets/app-apple-150x53 (1).png" alt="apple-app"></a>
+          </div>
+        </div>
+
+
+
+        <div class=" download-right-side mx-auto col-11 col-md-4">
+
+          <div class="d-flex px-4 my-5 w-75 mx-auto download-detail">
+            <span class=" bg-warning text-dark fs-6 fw-bold mx-3">03</span>
+            <div>
+              <h2 class="fs-5 fw-bolder text-center text-md-end text-warning ">FAST BOOKING</h2>
+              <p class="fw-light text-center text-md-end">Nam ac ligula congue, interdum enim sit amet, fermentum nisi.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex px-4 my-5 w-75 mx-auto download-detail ">
+            <span class=" bg-warning text-dark fs-6 fw-bold mx-3">04</span>
+            <div>
+              <h2 class="fs-5 fw-bolder text-warning text-center text-md-end">FAST BOOKING</h2>
+              <p class="fw-light text-center text-md-end">Nam ac ligula congue, interdum enim sit amet, fermentum nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- earn section  -->
+  <div class="earn">
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <h4>FOR DRIVERS</h4>
+          <h1>DO YOU WANT TO EARN WITH US?</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Voluptas, beatae?elit. Corporis expedita nulla commodi ab optio facilis a iure dolores.</p>
+          <div class="row">
+            <div class="col-6">
+              <p><i class="fa-solid fa-check fa-lg " style="color: #ffc631;"></i>&nbsp;&nbsp;Luxury cars</p>
+              <p><i class="fa-solid fa-check fa-lg" style="color: #ffc631;"></i>&nbsp;&nbsp;No fee</p>
+              <p><i class="fa-solid fa-check fa-lg" style="color: #ffc631;"></i>&nbsp;&nbsp;Weekly payment</p>
+            </div>
+            <div class="col-6">
+              <p><i class="fa-solid fa-check fa-lg" style="color: #ffc631;"></i>&nbsp;&nbsp;fixed price</p>
+              <p><i class="fa-solid fa-check fa-lg" style="color: #ffc631;"></i>&nbsp;&nbsp;Good application</p>
+              <p><i class="fa-solid fa-check fa-lg" style="color: #ffc631;"></i>&nbsp;&nbsp;Stable orders</p>
+            </div>
+          </div>
+          <button>BECOME A DRIVER</button>
+        </div>
+        <div class="col-5 d-xm-none d-sm-none d-md-none d-lg-block">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="chessPattern"></div>
+
+  <!-- Testimonial section -->
+  <section id="testimonial">
+    <div class="heading mb-4 pt-5">
+      <h3 class="fs-4 text-center">HAPPY CLIENT'S</h3>
+      <h1 class="text-center fw-bolder">TESTIMONIALS</h1>
+    </div>
+    <div class="container ms-5 mt-5" id="test">
+      <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active" data-bs-interval="2000">
+
+            <div class="d-flex justify-content-center gap-3">
+              <div class="card testimonial-card ms-3 p-4" style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum? </div>
+
+
+                <div class=" clientname ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Anastasia stone</p>
+                </div>
+                <img src="./assets/client-1-100x100 (1).jpg" alt="">
+              </div>
+              <div class="card testimonial-card ms-3 p-4 " id="mid"   style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+
+                <div class=" clientname ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Patrik James</p>
+                </div>
+                <img src="./assets/client-4-100x100 (1).jpg" alt="">
+              </div>
+              <div class="card testimonial-card ms-3 p-4" id="last"  style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+
+
+                <div class=" clientname  ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Steven Rashford</p>
+                </div>
+                <img src="./assets/client-5-100x100 (1).jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item active" data-bs-interval="2000">
+
+            <div class="d-flex gap-3 justify-content-center">
+              <div class="card testimonial-card ms-3 p-4" style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+
+
+                <div class=" clientname ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Steven Rashford</p>
+                </div>
+                <img src="./assets/client-5-100x100 (1).jpg" alt="">
+              </div>
+              <div class="card testimonial-card ms-3 p-4" id="mid"    style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body testimonial-card text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+
+
+                <div class=" clientname ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Anastasia stone</p>
+                </div>
+                <img src="./assets/client-4-100x100 (1).jpg" alt="">
+              </div>
+              <div class="card testimonial-card ms-3 p-4" id="last" style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body testimonial-card text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+                <div class=" clientname  ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Steven Rashford</p>
+                </div>
+                <img src="./assets/client-4-100x100 (1).jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item active" data-bs-interval="2000">
+
+            <div class="d-flex gap-3 justify-content-center">
+              <div class="card testimonial-card ms-3 p-4" style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+                <div class=" clientname ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Patrik James</p>
+                </div>
+                <img src="./assets/client-1-100x100 (1).jpg" alt="">
+              </div>
+
+
+              <div class="card testimonial-card ms-3 p-4" id="mid"   style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+                <div class=" clientname ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Steven Rashford</p>
+                </div>
+                <img src="./assets/client-5-100x100 (1).jpg" alt="">
+              </div>
+              <div class="card testimonial-card ms-3 p-4 " id="last" style="width: 21rem; height: 25rem; border: none;">
+                <div class="card-body text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat repudiandae mollitia a sint
+                  quia nesciunt iusto asperiores obcaecati dolorum?
+                </div>
+                <div class=" clientname  ">
+                  <i class="fa-solid fa-quote-left fs-1 text-center"></i>
+                  <p class="fs-5 fw-bold text-center">Anastasia stone</p>
+                </div>
+                <img src="./assets/client-1-100x100 (1).jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="buttons mb-5 pb-5" id="buttons">
+        <button class="mx-auto bg-warning text-white mx-3" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <i class="fa-solid fa-caret-left px-3 py-2"></i>
+        </button>
+        <button class="mx-auto bg-warning text-white" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <i class="fa-solid fa-caret-right px-3 py-2 "></i>
+        </button>
+      </div>
+
+    </div>
+    </div>
+
+
+    <!-- offer section  -->
+    <div class="container d-flex flex-column flex-md-row" id="OfferImage">
+      <div class=" w-full w-lg-50">
+        <a href="#"><img src="./assets/banner-1-4 (1).png" alt="" class=" " /></a>
+      </div>
+      <div class=" w-full w-lg-50">
+        <a href="#"><img src="./assets/banner-2-2 (1).png" alt="" class="" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="w-full py-3" id="footer-top">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <div class="ms-5 pt-3">
+          <h3 class="fs-4 ">OUR PARTNERS</h3>
+          <h1 class="fs-1 text-white ">AND CLIENTS</h1>
+        </div>
+        <div class=" pt-3 gap-5 d-flex flex-wrap justify-content-around pic">
+          <img src="./assets/partner-1 (1).png" alt="" height="65px" width="75px" class="mx-4 ">
+          <img src="./assets/partner-2 (1).png" alt="" height="65px" width="75px" class="mx-4">
+          <img src="./assets/partner-3 (1).png" alt="" height="65px" width="75px" class="mx-4">
+          <img src="./assets/partner-5 (1).png" alt="" height="65px" width="75px" class="mx-4">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark text-white d-flex  " id="footer-middle">
+      <div class="container row d-flex gap-2 mx-auto mt-5 py-4">
+        <div class="col-12 col-md-6 col-lg-3" id="footer-about">
+          <h2 class="text-warning ">ABOUT US</h2>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.</p>
+        </div>
+        <div class="d-none d-lg-block col-lg-4 ms-5" id="footer-explore">
+          <h2 class="text-warning">EXPLORE</h2>
+          <div class="d-flex ms-1">
+            <ul>
+              <li><i class="fa-solid fa-angle-right text-warning me-2"></i><a href="#">Gallery</a></li>
+              <li><i class="fa-solid fa-angle-right text-warning me-2"></i><a href="#">Tesimonial</a></li>
+              <li><i class="fa-solid fa-angle-right text-warning me-2"></i><a href="#">Services</a></li>
+              <li><i class="fa-solid fa-angle-right text-warning me-2"></i><a href="#">Shortcodes</a></li>
+            </ul>
+            <ul>
+              <li><i class="fa-solid fa-angle-right text-warning me-2"></i><a href="#">Contact</a></li>
+              <li><i class="fa-solid fa-angle-right text-warning me-2"></i><a href="#">Blog</a></li>
+              <li><i class="fa-solid fa-angle-right text-warning me-2"></i><a href="#">Get Taxi</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 mx-lg-4" id="footer-contact">
+          <h2 class="text-warning">CONTACT US</h2>
+          <p><span class="fw-bold">Address:</span> 43 2-nd Avenue, New York, NY 29004-7153</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="p-2" id="footer-bottom-part">
+      <p class="my-4 mx-4  "> <span class="text-warning">Like-themes</span> 2023 © All Rights Reserved <span
+          class="text-warning">Terms of use</span> </p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

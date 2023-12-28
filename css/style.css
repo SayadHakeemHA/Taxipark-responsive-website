@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* navbar start*/
+.navbar{
+  border-bottom: 4px solid #ffc61a;
+  opacity: 0.9;
+  font-weight:700;
+}
+ 
+.heading h1{
+    font-size: 3rem !important;
+    font-weight: 700;
+}
+.heading h3{
+    font-weight: 900;
+}
+.navbar-nav li a:hover .fa-angle-right{
+    rotate: 90deg;
+    }
+
+.navbar .navbar-nav .nav-item  li>a{
+    font-weight: 700;
+}
+
+.dropdown-toggle::after { 
+    content: none; 
+} 
+.nav-link{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.angle{
+    font-size: 13px;
+    font-weight: 600 !important;
+}
+#shopicon{
+    color:#ffc61a;
+    font-size: 15px;
+    margin-top: 2px;
+    position: relative;
+}
+ #shopicon::after{
+    content: '0';
+    position: absolute;
+    top: -16px;
+    right: -12px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.navbar-nav>li>a:hover{
+    color:#ffc61a;
+}
+.dropdown-menu{
+    display: none;
+    background-color:#ffc61a;
+    transition: all 2s;
+    padding: 0% !important;
+}
+.dropdown-item{
+    color: black;
+    padding: 10px 20px;
+}
+.dropdown-item:hover{
+    color: black;
+    background-color: #ffc61a;
+}
+.dropdown:hover .dropdown-menu{
+    background-color: white;
+    display: block;
+    color: black;
+}
+body::-webkit-scrollbar {
+    width: 0.7em;
+    background-color: #ffc61a;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 2px 5px 9px black;
+    background-color: black
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffc61a;
+    outline: 1px solid black;
+    border-radius: 3px;
+
+}
+
+/* Banner-start */
+
+.banner-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 43%;
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 10rem;
+    left: 100px;
+    border-radius: 10px;
+    z-index: 20;
+}
+.banner-card>h1{
+    font-weight: 700;
+}
+.carousel-item {
+    width: 100%;
+    height: 50rem;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    transition: all 3s;
+}
+.banner-card>form{
+    height: 80%;
+}
+.carpic img{
+    width: 5rem ;
+    height: 40px;
+}
+.activeCarImg{
+    background-color: #ffc61a;
+}
+.carpic>a{
+    margin: 4px ;
+    height: 4.5rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 1s linear;
+}
+.carpic>a:hover{
+    transition: all 0.4s ease-in-out;
+    background-color:#ffc61a;
+
+}
+.carpic p{
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.form-control{
+    padding: 12px;
+    width: 105%;
+    border: thin solid #212529;
+}
+.form-control:focus{
+    outline: thin solid #ffc61a;
+    border: none;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.btn{
+    border-radius: 50px !important;
+    padding: 1rem 5rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+.btn:hover{
+    transition: all 0.4s ease-in-out;
+    color: #ffc61a;
+    background-color:#212529;
+}
+
+
+#banner .carousel-inner .carousel-item img{
+    -webkit-animation: kenburns-bottom 5s ease-out reverse both;
+    animation: kenburns-bottom 5s ease-out reverse both;
+}
+
+@-webkit-keyframes kenburns-bottom {
+0% {
+-webkit-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+-webkit-transform-origin: 50% 84%;
+  transform-origin: 50% 84%;
+}
+100% {
+-webkit-transform: scale(1.25) translateY(15px);
+  transform: scale(1.25) translateY(15px);
+-webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+}
+@keyframes kenburns-bottom {
+0% {
+-webkit-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+-webkit-transform-origin: 50% 84%;
+  transform-origin: 50% 84%;
+}
+100% {
+-webkit-transform: scale(1.25) translateY(15px);
+  transform: scale(1.25) translateY(15px);
+-webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+}
+
+/* banner-bottom */
+.banner-bottom>div i{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.banner-bottom{
+    margin: 0 3rem;
+    margin: auto;
+}
+.banner-bottom>div>button{
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid #212529;
+    background-color: #ffc61a;
+    padding: 1rem 4rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+    transition: all 0.5s linear;
+}
+.banner-bottom>div>button:hover{
+    transition: all 0.4s linear;
+    background-color: #212529;
+    color: #ffc61a;
+}
+
+/* services */
+#services .container img{
+    height: 4rem;
+    width: 5rem;
+}
+
+/* tariffs */
+#tariffs .container .card:hover{
+   box-shadow: 0px 8px 20px #212529 ;
+   transition: all 0.7 ease-out;
+}
+#tariffs{
+    background-color: rgb(240, 238, 238);
+}
+#vip{
+ border: 1px solid #ffc61a;
+}
+
+#vip-logo{
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: #ffc61a;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#vip-logo i{
+    color: white;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/* download section */
+#download{
+    height: 40rem;
+    background-image: url('../assets/download-bg\ \(1\).jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#download>.download-wrapper{
+    height: 40rem;
+    opacity: 0.8;
+    background-color: #0a0a0a;
+}
+
+#download>.download-wrapper>h1{
+    font-size: 3rem !important;
+}
+.download-right-side>div{
+    display: flex;
+    flex-direction:row-reverse ;
+}
+.download-detail>span{
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download-detail p{
+    font-size: 15px;
+    font-weight: 100;
+}
+#mobile-image{
+    height: 25rem;
+    overflow-y: hidden;
+}
+#mobile-image>img{
+    width: 19rem !important;
+   
+}
+#mobile-image>div{
+    width: 70% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* earn-section  */
+.earn{
+    padding:5% 0% 5% 10%;
+}
+.earn .container .row .col-7>h4{
+    color: #ffc61a;
+    font-weight: 700;
+}
+.earn .container .row .col-7>h1{
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.earn .container .row .col-7>p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.earn .container .row .col-5{
+    background-image: url('../assets/car-big-side.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.earn .container .row .col-6>p{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.earn .container .row .col-6>i{
+    height: 5px;
+    width: 5px;
+}
+
+.earn .container .row .col-7>button{
+   height: 4rem;
+    margin-top: 1.3rem;
+        text-align: center;
+        padding: 8px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #ffc61a;
+        border:2px solid #ffc61a;
+    }
+    
+.earn .container .row .col-7>button:hover{
+        color:#ffc61a;
+        background-color:#212529;
+        border-color: #212529;
+        transition: all 0.3s ease-in-out;
+    
+}
+
+/* chess pattern line */
+.chessPattern{
+    width: 100%;
+    height: 1.5rem;
+    background-color: rgb(246, 242, 255); 
+    opacity: 0.8;
+    background-image: repeating-linear-gradient(45deg, rgb(41, 41, 42) 25%, transparent 25%, transparent 75%, rgb(41, 41, 42) 75%, rgb(41, 41, 42)), repeating-linear-gradient(45deg, rgb(41, 41, 42) 25%, rgb(246, 242, 255) 25%, rgb(246, 242, 255) 75%, rgb(41, 41, 42) 75%, rgb(41, 41, 42));       
+    background-size: 14px 14px; 
+    background-position: 0px 0px, 7px 7px;
+}
+
+/* testimonial*/
+#testimonial{
+    background-color: rgb(235, 234, 234);
+}
+#testimonial .heading>h3{
+    color: #ffc61a!important;
+}
+#carouselExampleInterval{
+    width: 100%;
+    height: 50% !important;
+}
+#carouselExampleInterval>div{
+    width: 100%;
+    height: 30rem;
+}
+.clientname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.clientname >i{
+    color: #212529;
+}
+.testimonial-card img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 110px;
+    bottom: -28px;
+}
+.buttons{
+    padding-left:41rem;
+    gap: 1px;
+}
+#buttons button{
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.buttons button:hover{
+   background-color: #212529;
+}
+#OfferImage{
+    width: 100%;
+    padding: 10px;
+}
+#OfferImage img{
+    width: 100%;
+}
+
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+
+  /* footer */
+
+  #footer>#footer-top{
+    background-color: #ffc61a;
+  }
+  
+    #footer-top>div>div{
+    padding: 0rem 0rem;
+    padding-top: 2rem;
+}
+#footer-top h3{
+    line-height: 25px; 
+    font-weight: 900 !important;
+    font-size: 25px;
+}
+#footer-top h1{
+    line-height: 40px;
+    font-weight: 900 !important;
+    font-size: 40px;
+}
+#footer-middle{
+    background-color: #161616!important;
+}
+
+#footer-middle h2{
+    color: #ffc61a;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 1.6rem;
+}
+#footer-middle p{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+#footer-explore >div ul li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 1px dashed #929394;
+    padding: 7px 0px;
+    width: 10rem;
+}
+
+#footer-explore >div ul li a{
+    color: white;
+    text-decoration: none;
+}
+#footer-explore >div {
+    margin-left: -40px;
+    padding-left: -20px;
+}
+#footer-bottom-part{
+    background-color: #0a0a0a;
+    color: #929394;
+} 
+#footer-explore>h2{
+margin-left: 2.2rem ;
+}
+
+#footer-explore ul li a:hover{
+    color: #ffc61a;
+    transition: all 0.3s ease-in-out;
+}
