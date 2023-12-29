@@ -85,7 +85,7 @@
 }
 body::-webkit-scrollbar {
     width: 0.7em;
-    background-color: #ffc61a;
+    background-color: black !important;
 }
 
 body::-webkit-scrollbar-track {
@@ -94,7 +94,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #ffc61a;
+    background-color: black;
     outline: 1px solid black;
     border-radius: 3px;
 
