@@ -11,6 +11,7 @@
   border-bottom: 4px solid #ffc61a;
   opacity: 0.9;
   font-weight:700;
+  background-color:#1f1f1f;
 }
  
 .heading h1{
@@ -64,24 +65,47 @@
 .navbar-nav>li>a:hover{
     color:#ffc61a;
 }
-.dropdown-menu{
+ .dropdown-menu{
+    /* width: 10rem; */
     display: none;
     background-color:#ffc61a;
     transition: all 2s;
     padding: 0% !important;
-}
+
+} 
 .dropdown-item{
+    width: 15rem !important;
     color: black;
     padding: 10px 20px;
-}
+    font-size: 1.1rem !important;
+} 
 .dropdown-item:hover{
     color: black;
     background-color: #ffc61a;
 }
+.dropdown{
+    position: relative;
+}
 .dropdown:hover .dropdown-menu{
     background-color: white;
-    display: block;
+    display:block;
     color: black;
+    position: absolute !important;
+    right: 0.2rem;
+    top: 4.5rem;
+
+}
+.dropdown:hover .dropdown-menu>.dropdown .dropdown-menu{
+    display: none;
+}
+.dropdown .dropdown-menu>.dropdown{
+    position: relative;
+}
+.dropdown .dropdown-menu>.dropdown:hover .dropdown-menu{
+    display: inline-block;
+    position: absolute;
+    right: 15rem;
+    top: 0;
 }
 body::-webkit-scrollbar {
     width: 0.7em;
